@@ -32,8 +32,8 @@ resource "aws_subnet" "worker_subnet2" {
 
 resource "aws_subnet" "worker_subnet3" {
   vpc_id            = aws_vpc.k8sbook_vpc.id
-  cidr_block        = var.worker_subnet2
-  availability_zone = var.availability_zone1
+  cidr_block        = var.worker_subnet3
+  availability_zone = var.availability_zone3
 
   tags = {
     Name = "${var.cluster_base_name}_subnet3"
