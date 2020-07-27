@@ -1,4 +1,4 @@
 provider "aws" {
-  profile = "awsadmin"
+  profile = "awsspare"
   region  = "ap-northeast-1"
 }
