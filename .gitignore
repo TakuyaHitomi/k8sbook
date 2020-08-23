@@ -32,4 +32,5 @@ out/
 
 ### terraform ###
 .terraform/
-*.tstate
+*.tfstate
+*.tfstate.backup

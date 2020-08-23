@@ -26,17 +26,22 @@ variable "worker_subnet3" {
   default = "192.168.2.0/24"
 }
 
-# RDS instance の username
-variable "rds_username" {
-  default = "root"
+variable "rds_subnet1" {
+  default = "192.168.3.0/24"
 }
 
-# RDS instance の password 
-variable "rds_password" {
-  default = "sudokudb"
+variable "rds_subnet2" {
+  default = "192.168.4.0/24"
 }
 
-# RDS instance の database 名
-variable "rds_database" {
-  default = "sudokudb"
+variable "op_subnet" {
+  default = "192.168.5.0/24"
+}
+
+variable "op_image_id" {
+  default = "ami-0cc75a8978fbbc969"
+}
+
+variable "snapshot_identifier" {
+  default = "arn:aws:rds:ap-northeast-1:643143527856:snapshot:eks-workdb-initial"
 }
